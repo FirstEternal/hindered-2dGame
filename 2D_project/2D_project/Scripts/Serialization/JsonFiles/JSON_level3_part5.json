@@ -1,0 +1,999 @@
+{
+    "gameObjects": [
+        {
+            "Tag": "Terrain",
+            "ID": 6400,
+            "GlobalPosition": "0, 0",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6401,
+            "GlobalPosition": "8, -2",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 3,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6402,
+            "GlobalPosition": "18, -4",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 3,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                }
+            ]
+        },
+        // Repeat this 4 times
+        // repeated(1/4)
+        {
+            "Tag": "Terrain",
+            "ID": 6403,
+            "GlobalPosition": "26, -8",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 3,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6404,
+            "GlobalPosition": "34.5, -12",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Shader_tile_spike_1",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInDirection": 6,
+                    "TilesInHeight": 10,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "34.5, -23",
+                    "EndTilePosition": "34.5, -2",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        }, // repeated(2/4) 
+        {
+            "Tag": "Terrain",
+            "ID": 6405,
+            "GlobalPosition": "42, -8",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6406,
+            "GlobalPosition": "44.5, -15",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Shader_tile_spike_1",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInDirection": 6,
+                    "TilesInHeight": 8,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "44.5, -28",
+                    "EndTilePosition": "44.5, -9",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        }, // repeated(3/4)
+        {
+            "Tag": "Terrain",
+            "ID": 6407,
+            "GlobalPosition": "52, -12",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6408,
+            "GlobalPosition": "54.5, -28",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Shader_tile_spike_1",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInDirection": 6,
+                    "TilesInHeight": 6,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "54.5, -29",
+                    "EndTilePosition": "54.5, -12",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        }, // repeated(4/4)
+        {
+            "Tag": "Terrain",
+            "ID": 6409,
+            "GlobalPosition": "62, -12",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6410,
+            "GlobalPosition": "64.5, -26",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Shader_tile_spike_1",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInDirection": 6,
+                    "TilesInHeight": 4,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "64.5, -27",
+                    "EndTilePosition": "64.5, -12",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6411,
+            "GlobalPosition": "72, -16",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6412,
+            "GlobalPosition": "75, -19",
+            "LocalScale": "0.4, 0.4",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "TeleportObject",
+                    "portalLocation": "134.5, -35",
+                    "portalSpriteName": "ShaderPortal"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6415,
+            "GlobalPosition": "144, -28",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6416,
+            "GlobalPosition": "148, -48",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Shader_tile_spike_1",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInDirection": 7,
+                    "TilesInHeight": 6,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "148, -49",
+                    "EndTilePosition": "148, -32",
+                    "WidthInTiles": "7",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6417,
+            "GlobalPosition": "156, -20",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6419,
+            "GlobalPosition": "168, -24",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6420,
+            "GlobalPosition": "172, -28",
+            "localRotation": 120,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "3",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6421,
+            "GlobalPosition": "180, -32",
+            "localRotation": 90,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "3",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6420,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6423,
+            "GlobalPosition": "180, -36",
+            "localRotation": 90,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "3",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6421,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6424,
+            "GlobalPosition": "180, -40",
+            "localRotation": 90,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "3",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6423,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6425,
+            "GlobalPosition": "180, -44",
+            "localRotation": 90,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "3",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6424,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 1000,
+            "GlobalPosition": "186, -48",
+            "localRotation": 180,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Shader_tile_spike_1",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInDirection": 3,
+                    "TilesInHeight": 10,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "186, -65",
+                    "EndTilePosition": "186, -50",
+                    "WidthInTiles": "3",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "300"
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6425,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6426,
+            "GlobalPosition": "186, -52",
+            "localRotation": 180,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Shader_tile_spike_1",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInDirection": 3,
+                    "TilesInHeight": 10,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "186, -65",
+                    "EndTilePosition": "186, -50",
+                    "WidthInTiles": "3",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "300"
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 1000,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6427,
+            "GlobalPosition": "190, -52",
+            "localRotation": 180,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Shader_tile_spike_1",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInDirection": 3,
+                    "TilesInHeight": 8,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "190, -64",
+                    "EndTilePosition": "190, -49",
+                    "WidthInTiles": "3",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "300"
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6425,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6428,
+            "GlobalPosition": "194, -55",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6425,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6429,
+            "GlobalPosition": "204, -51",
+            "isActive": false,
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Shader_tile_spike_1",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInDirection": 3,
+                    "TilesInHeight": 5,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "204, -60",
+                    "EndTilePosition": "204, -45",
+                    "WidthInTiles": "3",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "400"
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6425,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6430,
+            "GlobalPosition": "208, -44",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6425,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6431,
+            "GlobalPosition": "228, -50",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 20,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6432,
+            "GlobalPosition": "248, -55",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 20,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6433,
+            "GlobalPosition": "237.5, -60",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Shader_tile_spike_1",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInDirection": 20,
+                    "TilesInHeight": 5,
+                    "TilesBeforeSkip": 4,
+                    "SkipTillNext": 4,
+                    "AreSpikesSeparated": true
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "237.5, -62",
+                    "EndTilePosition": "237.5, -50",
+                    "WidthInTiles": "3",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "300"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6434,
+            "GlobalPosition": "268, -50",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Shader_tile_spike_1",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInDirection": 4,
+                    "TilesInHeight": 5,
+                    "TilesBeforeSkip": 4,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "268, -60",
+                    "EndTilePosition": "268, -45",
+                    "WidthInTiles": "3",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6435,
+            "GlobalPosition": "276, -45",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Shader_tile_spike_1",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInDirection": 4,
+                    "TilesInHeight": 7,
+                    "TilesBeforeSkip": 4,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "276, -55",
+                    "EndTilePosition": "276, -40",
+                    "WidthInTiles": "3",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "300"
+                }
+            ]
+        },
+        {
+
+            "Tag": "Terrain",
+            "ID": 6445,
+            "GlobalPosition": "260, -54",
+            "localRotation": -90,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "3",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6445,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6447,
+            "GlobalPosition": "258.5, -45.5",
+            "localRotation": 90,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 14,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6448,
+            "GlobalPosition": "261.5, -45.5",
+            "localRotation": 90,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 14,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6449,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6449,
+            "GlobalPosition": "260, -37",
+            "localRotation": -90,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "3",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6436,
+            "GlobalPosition": "273, -38",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 22,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6437,
+            "GlobalPosition": "284, -50",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Shader_tile_spike_1",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInDirection": 4,
+                    "TilesInHeight": 5,
+                    "TilesBeforeSkip": 4,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "284, -60",
+                    "EndTilePosition": "284, -45",
+                    "WidthInTiles": "3",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6438,
+            "GlobalPosition": "294, -44",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 20,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                }
+            ]
+        },
+        {
+
+            "Tag": "Terrain",
+            "ID": 6440,
+            "GlobalPosition": "306, -43",
+            "localRotation": 90,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "3",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6441,
+            "GlobalPosition": "306, -49",
+            "localRotation": 90,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "3",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6440,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6442,
+            "GlobalPosition": "306, -55",
+            "localRotation": 90,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "3",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6441,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6443,
+            "GlobalPosition": "306, -61",
+            "localRotation": 90,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "3",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6442,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6444,
+            "GlobalPosition": "323, -62",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 30,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Shader_tile_corner1",
+                    "SideTileName": "Shader_tile_side1",
+                    "MiddleTileName": "Shader_tile_middle1"
+                }
+            ]
+        }
+        // start with 6450
+    ]
+}

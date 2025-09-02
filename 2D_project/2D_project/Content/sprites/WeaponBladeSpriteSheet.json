@@ -1,0 +1,68 @@
+{"frames": {
+
+"After BouldererBlade.png":
+{
+	"frame": {"x":1,"y":1,"w":460,"h":150},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":460,"h":150},
+	"sourceSize": {"w":460,"h":150}
+},
+"After BurnerBlade.png":
+{
+	"frame": {"x":1,"y":153,"w":460,"h":150},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":460,"h":150},
+	"sourceSize": {"w":460,"h":150}
+},
+"After DrownerBlade.png":
+{
+	"frame": {"x":1,"y":305,"w":460,"h":150},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":460,"h":150},
+	"sourceSize": {"w":460,"h":150}
+},
+"After FrosterBlade.png":
+{
+	"frame": {"x":1,"y":457,"w":460,"h":150},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":460,"h":150},
+	"sourceSize": {"w":460,"h":150}
+},
+"After GrasserBlade.png":
+{
+	"frame": {"x":1,"y":609,"w":460,"h":150},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":460,"h":150},
+	"sourceSize": {"w":460,"h":150}
+},
+"After ShaderBlade.png":
+{
+	"frame": {"x":1,"y":761,"w":460,"h":150},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":460,"h":150},
+	"sourceSize": {"w":460,"h":150}
+},
+"After ThundererBlade.png":
+{
+	"frame": {"x":1,"y":913,"w":460,"h":150},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":460,"h":150},
+	"sourceSize": {"w":460,"h":150}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "WeaponBladeSpriteSheet.png",
+	"format": "RGBA8888",
+	"size": {"w":462,"h":1064},
+	"scale": "0.5",
+	"smartupdate": "$TexturePacker:SmartUpdate:342da7732976e5b344cee2c73d2ff535:f36e6df3fb41397977726e7634dd6b99:c9029f5411569e101b6fff4ef6436e2b$"
+}
+}

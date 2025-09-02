@@ -1,0 +1,880 @@
+{
+    "gameObjects": [
+        // Left Side
+        {
+            "Tag": "Terrain",
+            "ID": 3000,
+            "GlobalPosition": "0, 0",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 3001,
+            "GlobalPosition": "6, 0",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "5, 1",
+                    "EndTilePosition": "20, -10",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 3002,
+            "GlobalPosition": "22, -10",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 6,
+                    "TilesInHeight": 1,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0
+                }
+            ]
+        },
+        // Repeat this 4 times
+        // repeated(1/4) 
+        {
+            "Tag": "Terrain",
+            "ID": 3003,
+            "GlobalPosition": "32, -12",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 3004,
+            "GlobalPosition": "34.5, -32",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 6,
+                    "TilesInHeight": 10,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "34.5, -33",
+                    "EndTilePosition": "34.5, -12",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        }, // repeated(2/4) 
+        {
+            "Tag": "Terrain",
+            "ID": 3005,
+            "GlobalPosition": "42, -12",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 3006,
+            "GlobalPosition": "44.5, -30",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 6,
+                    "TilesInHeight": 8,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "44.5, -31",
+                    "EndTilePosition": "44.5, -12",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        }, // repeated(3/4) 
+        {
+            "Tag": "Terrain",
+            "ID": 3007,
+            "GlobalPosition": "52, -12",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 3008,
+            "GlobalPosition": "54.5, -28",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 6,
+                    "TilesInHeight": 6,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "54.5, -29",
+                    "EndTilePosition": "54.5, -12",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        }, // repeated(4/4) 
+        {
+            "Tag": "Terrain",
+            "ID": 3009,
+            "GlobalPosition": "62, -12",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 3010,
+            "GlobalPosition": "64.5, -26",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 6,
+                    "TilesInHeight": 4,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "64.5, -27",
+                    "EndTilePosition": "64.5, -12",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+        // no more repeating 
+        {
+            "Tag": "Terrain",
+            "ID": 3011,
+            "GlobalPosition": "72, -12",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 3012,
+            "GlobalPosition": "82, -12",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                },
+                {
+
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "82, -11",
+                    "EndTilePosition": "82, -30",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 3013,
+            "GlobalPosition": "92, -29",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 30121,
+            "GlobalPosition": "100, -29",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 10,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                },
+
+                {
+                    "Type": "MoveStopOnCollisionComponent",
+                    "CollisionTagsToStart": [ "Player" ],
+                    "CollisionTagsToStop": [ "Hidden" ],
+                    "Velocity": "300, 0",
+                    "mass": 10000,
+                    "isMovable": false,
+                    "AdjustToTileSystem": true
+                }
+            ]
+        },
+        {
+            "Tag": "Hidden",
+            "ID": 30122,
+            "GlobalPosition": "156, -29",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_InvisibleCollider",
+                    "WidthInTiles": 6,
+                    "heightInTiles": 1
+                }
+            ]
+        },
+        // Repeat this 7 times in zig zag(+ rotation, -rotation periodically)
+        // repeated(1/7) 
+        {
+            "Tag": "Terrain",
+            "ID": 3013,
+            "GlobalPosition": "162, -29",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 3014,
+            "GlobalPosition": "164.5, -49",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 6,
+                    "TilesInHeight": 10,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "164.5, -50",
+                    "EndTilePosition": "164.5, -29",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        }, // repeated(2/7) 
+        {
+            "Tag": "Terrain",
+            "ID": 3015,
+            "GlobalPosition": "168, -30",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 4,
+                    "TilesInHeight": 1,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                }
+            ]
+        }, // repeated(3/7) 
+        {
+            "Tag": "Terrain",
+            "ID": 3016,
+            "GlobalPosition": "176.5, -29",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 3017,
+            "GlobalPosition": "179, -49",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 6,
+                    "TilesInHeight": 10,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "179, -50",
+                    "EndTilePosition": "179, -29",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "100"
+                }
+            ]
+        }, // repeated(4/7) 
+        {
+            "Tag": "Terrain",
+            "ID": 3018,
+            "GlobalPosition": "182.5, -30",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 4,
+                    "TilesInHeight": 1,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                }
+            ]
+        }, // repeated(5/7) 
+        {
+            "Tag": "Terrain",
+            "ID": 3019,
+            "GlobalPosition": "190.5, -29",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 3020,
+            "GlobalPosition": "193, -49",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 6,
+                    "TilesInHeight": 10,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "193, -50",
+                    "EndTilePosition": "193, -29",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        }, // repeated(6/7) 
+        {
+            "Tag": "Terrain",
+            "ID": 3021,
+            "GlobalPosition": "196.5, -30",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 4,
+                    "TilesInHeight": 1,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                }
+            ]
+        }, // repeated(7/7) 
+        {
+            "Tag": "Terrain",
+            "ID": 3022,
+            "GlobalPosition": "205, -29",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 3023,
+            "GlobalPosition": "207.5, -49",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 6,
+                    "TilesInHeight": 10,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "207.5, -50",
+                    "EndTilePosition": "207.5, -29",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "100"
+                }
+            ]
+        },
+        // END
+        {
+            "Tag": "Terrain",
+            "ID": 3024,
+            "GlobalPosition": "260, -17",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 90,
+                    "TilesInHeight": 12,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 3025,
+            "GlobalPosition": "312.5, -25",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                }
+            ]
+        },
+        // Repeat this 7 times in zig zag(+ rotation, -rotation periodically)
+        {
+            "Tag": "Terrain",
+            "ID": 3026,
+            "GlobalPosition": "320, -29",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 3027,
+            "GlobalPosition": "322.5, -49",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 6,
+                    "TilesInHeight": 10,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "322.5, -50",
+                    "EndTilePosition": "322.5, -29",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 3028,
+            "GlobalPosition": "326, -30",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 4,
+                    "TilesInHeight": 1,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 3029,
+            "GlobalPosition": "334.5, -29",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 3030,
+            "GlobalPosition": "337, -49",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 6,
+                    "TilesInHeight": 10,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "337, -50",
+                    "EndTilePosition": "337, -29",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "100"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 3031,
+            "GlobalPosition": "340.5, -30",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 4,
+                    "TilesInHeight": 1,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 3032,
+            "GlobalPosition": "348.5, -29",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 3033,
+            "GlobalPosition": "351, -49",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 6,
+                    "TilesInHeight": 10,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "351, -50",
+                    "EndTilePosition": "351, -29",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 3034,
+            "GlobalPosition": "354.5, -30",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 4,
+                    "TilesInHeight": 1,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 3035,
+            "GlobalPosition": "363, -29",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 3036,
+            "GlobalPosition": "365.5, -49",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Boulderer_tile_spike_1",
+                    "CornerTileName": "Boulderer_tile_corner1",
+                    "SideTileName": "Boulderer_tile_side1",
+                    "MiddleTileName": "Boulderer_tile_middle1",
+                    "TilesInDirection": 6,
+                    "TilesInHeight": 10,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0,
+                    "AreSpikesSeparated": false
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "365.5, -50",
+                    "EndTilePosition": "365.5, -29",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "100"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 3037,
+            "GlobalPosition": "370, -32",
+            "LocalScale": "0.5, 0.5",
+            "objectComponents": [
+                {
+                    "Type": "TeleportObject",
+                    "portalLocation": "468.75, -52",
+                    "portalSpriteName": "BouldererPortal"
+                },
+                {
+                    "Type": "RespawnPointReachedRecieverComponentData",
+                    "TransmitterObjectID": 2037,
+                    "TransmitterComponentType": "TeleportObject",
+                    "EventHandler": "OnPlayerTeleport"
+                }
+            ]
+        },
+
+
+
+
+
+        {
+            "Tag": "Terrain",
+            "ID": -11111,
+            "objectComponents": [
+                {
+                    "Type": "EnemySpawner",
+                    "EnemyTypes": [
+                        "Enemy_AntiVerse_ShaPt",
+                        "Enemy_AntiVerse_ShaPt",
+                        "Enemy_AntiVerse_ShaPt",
+                        "Enemy_AntiVerse_ShaPt"
+                    ],
+                    "EnemySpawnPositions": [
+                        "230, -21",
+                        "250, -21",
+                        "270, -21",
+                        "290, -21"
+                    ]
+                }
+            ]
+        }
+    ]
+}

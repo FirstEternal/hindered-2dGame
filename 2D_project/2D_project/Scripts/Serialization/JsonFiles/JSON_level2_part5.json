@@ -1,0 +1,537 @@
+{
+    "gameObjects": [
+        {
+            "Tag": "Terrain",
+            "ID": 6000,
+            "GlobalPosition": "0, 0",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Wood_tile_sideCorner1",
+                    "SideTileName": "Wood_tile_side1",
+                    "MiddleTileName": "Wood_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6001,
+            "GlobalPosition": "0, 10",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Wood_tile_sideCorner1",
+                    "SideTileName": "Wood_tile_side1",
+                    "MiddleTileName": "Wood_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6002,
+            "GlobalPosition": "0, 20",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Wood_tile_sideCorner1",
+                    "SideTileName": "Wood_tile_side1",
+                    "MiddleTileName": "Wood_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6003,
+            "GlobalPosition": "0, 30",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Wood_tile_sideCorner1",
+                    "SideTileName": "Wood_tile_side1",
+                    "MiddleTileName": "Wood_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6004,
+            "GlobalPosition": "0, 40",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveStopOnCollisionComponent",
+                    "CollisionTagsToStart": [ "Player" ],
+                    "CollisionTagsToStop": [ "Hidden" ],
+                    "Velocity": "-200, 0",
+                    "mass": 10000,
+                    "isMovable": false,
+                    "AdjustToTileSystem": true,
+                    "HideOnStopEnabled": true
+                }
+            ]
+        },
+        {
+            "Tag": "Hidden",
+            "ID": 6005,
+            "GlobalPosition": "-20, 40",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_InvisibleCollider",
+                    "WidthInTiles": 6,
+                    "heightInTiles": 1
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6004,
+                    "TransmitterComponentType": "MoveStopOnCollisionComponent",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6006,
+            "GlobalPosition": "-14, 40",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveStopOnCollisionComponent",
+                    "CollisionTagsToStart": [ "Player" ],
+                    "CollisionTagsToStop": [ "Hidden" ],
+                    "Velocity": "0, 150",
+                    "mass": 10000,
+                    "isMovable": false,
+                    "AdjustToTileSystem": true,
+                    "HideOnStopEnabled": true
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6004,
+                    "TransmitterComponentType": "MoveStopOnCollisionComponent",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "Hidden",
+            "ID": 6007,
+            "GlobalPosition": "-14,60",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_InvisibleCollider",
+                    "WidthInTiles": 6,
+                    "heightInTiles": 1
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6006,
+                    "TransmitterComponentType": "MoveStopOnCollisionComponent",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6008,
+            "GlobalPosition": "-14, 59",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveStopOnCollisionComponent",
+                    "CollisionTagsToStart": [ "Player" ],
+                    "CollisionTagsToStop": [ "Hidden" ],
+                    "Velocity": "400, 0",
+                    "mass": 10000,
+                    "isMovable": false,
+                    "AdjustToTileSystem": true,
+                    "HideOnStopEnabled": true
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6006,
+                    "TransmitterComponentType": "MoveStopOnCollisionComponent",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "Hidden",
+            "ID": 6009,
+            "GlobalPosition": "100, 59",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_InvisibleCollider",
+                    "WidthInTiles": 6,
+                    "heightInTiles": 1
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6008,
+                    "TransmitterComponentType": "MoveStopOnCollisionComponent",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6010,
+            "GlobalPosition": "94, 59",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveStopOnCollisionComponent",
+                    "CollisionTagsToStart": [ "Player" ],
+                    "CollisionTagsToStop": [ "Hidden" ],
+                    "Velocity": "0, -200",
+                    "mass": 10000,
+                    "isMovable": false,
+                    "AdjustToTileSystem": true,
+                    "HideOnStopEnabled": true
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6008,
+                    "TransmitterComponentType": "MoveStopOnCollisionComponent",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "Hidden",
+            "ID": 6011,
+            "GlobalPosition": "94, 20",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_InvisibleCollider",
+                    "WidthInTiles": 6,
+                    "heightInTiles": 1
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6010,
+                    "TransmitterComponentType": "MoveStopOnCollisionComponent",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6012,
+            "GlobalPosition": "94, 21",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveStopOnCollisionComponent",
+                    "CollisionTagsToStart": [ "Player" ],
+                    "CollisionTagsToStop": [ "Hidden" ],
+                    "Velocity": "300, 0",
+                    "mass": 10000,
+                    "isMovable": false,
+                    "AdjustToTileSystem": true,
+                    "HideOnStopEnabled": true
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6010,
+                    "TransmitterComponentType": "MoveStopOnCollisionComponent",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "Hidden",
+            "ID": 6013,
+            "GlobalPosition": "110, 21",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_InvisibleCollider",
+                    "WidthInTiles": 6,
+                    "heightInTiles": 1
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6012,
+                    "TransmitterComponentType": "MoveStopOnCollisionComponent",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6014,
+            "GlobalPosition": "104, 21",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveStopOnCollisionComponent",
+                    "CollisionTagsToStart": [ "Player" ],
+                    "CollisionTagsToStop": [ "Hidden" ],
+                    "Velocity": "0, 200",
+                    "mass": 10000,
+                    "isMovable": false,
+                    "AdjustToTileSystem": true,
+                    "HideOnStopEnabled": true
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6012,
+                    "TransmitterComponentType": "MoveStopOnCollisionComponent",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "Hidden",
+            "ID": 6015,
+            "GlobalPosition": "104, 40",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_InvisibleCollider",
+                    "WidthInTiles": 6,
+                    "heightInTiles": 1
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6014,
+                    "TransmitterComponentType": "MoveStopOnCollisionComponent",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6016,
+            "GlobalPosition": "104, 39",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveStopOnCollisionComponent",
+                    "CollisionTagsToStart": [ "Player" ],
+                    "CollisionTagsToStop": [ "Hidden" ],
+                    "Velocity": "300, 0",
+                    "mass": 10000,
+                    "isMovable": false,
+                    "AdjustToTileSystem": true,
+                    "HideOnStopEnabled": true
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6014,
+                    "TransmitterComponentType": "MoveStopOnCollisionComponent",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "Hidden",
+            "ID": 6017,
+            "GlobalPosition": "130, 39",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_InvisibleCollider",
+                    "WidthInTiles": 6,
+                    "heightInTiles": 1
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6016,
+                    "TransmitterComponentType": "MoveStopOnCollisionComponent",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6018,
+            "GlobalPosition": "124, 39",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveStopOnCollisionComponent",
+                    "CollisionTagsToStart": [ "Player" ],
+                    "CollisionTagsToStop": [ "Hidden" ],
+                    "Velocity": "0, -400",
+                    "mass": 10000,
+                    "isMovable": false,
+                    "AdjustToTileSystem": true,
+                    "HideOnStopEnabled": true
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6016,
+                    "TransmitterComponentType": "MoveStopOnCollisionComponent",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "Hidden",
+            "ID": 6019,
+            "GlobalPosition": "124, -1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_InvisibleCollider",
+                    "WidthInTiles": 6,
+                    "heightInTiles": 1
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6018,
+                    "TransmitterComponentType": "MoveStopOnCollisionComponent",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6020,
+            "GlobalPosition": "124, 0",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveStopOnCollisionComponent",
+                    "CollisionTagsToStart": [ "Player" ],
+                    "CollisionTagsToStop": [ "Hidden" ],
+                    "Velocity": "-300, 0",
+                    "mass": 10000,
+                    "isMovable": false,
+                    "AdjustToTileSystem": true
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6018,
+                    "TransmitterComponentType": "MoveStopOnCollisionComponent",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "Hidden",
+            "ID": 6021,
+            "GlobalPosition": "80, 0",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_InvisibleCollider",
+                    "WidthInTiles": 6,
+                    "heightInTiles": 1
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 6020,
+                    "TransmitterComponentType": "MoveStopOnCollisionComponent",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6022,
+            "GlobalPosition": "86, -5",
+            "LocalScale": "0.5, 0.5",
+            "localRotation": 90,
+            "objectComponents": [
+                {
+                    "Type": "TeleportObject",
+                    "portalLocation": "-300, -5",
+                    "portalSpriteName": "FrosterPortal"
+                }
+            ]
+        }
+    ]
+}

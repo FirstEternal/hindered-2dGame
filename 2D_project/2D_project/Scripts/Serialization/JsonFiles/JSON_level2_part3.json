@@ -1,0 +1,1142 @@
+{
+    "gameObjects": [
+        {
+            "Tag": "Terrain",
+            "ID": 4001,
+            "GlobalPosition": "0, 0",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 8,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 4002,
+            "GlobalPosition": "-10, 0",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "-10, 1",
+                    "EndTilePosition": "-10, -10",
+                    "WidthInTiles": "6",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4003,
+            "GlobalPosition": "-35, -10",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 40,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 4004,
+            "GlobalPosition": "-60, -10",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 4,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "-59, -10",
+                    "EndTilePosition": "-76, -10",
+                    "WidthInTiles": "1",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+
+        {
+            "Tag": "MovableTerrain",
+            "ID": 4005,
+            "GlobalPosition": "-77, -10",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 4,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "-76, -10",
+                    "EndTilePosition": "-91, -10",
+                    "WidthInTiles": "1",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 4006,
+            "GlobalPosition": "-94, -10",
+
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 4,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "-91, -10",
+                    "EndTilePosition": "-106, -10",
+                    "WidthInTiles": "1",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4007,
+            "GlobalPosition": "-110.5, -5",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Stairs",
+                    "TilesInDirection": 10,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "IsHorizontallyFlipped": true
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 4008,
+            "GlobalPosition": "-117, 0",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 4,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "-116, 0",
+                    "EndTilePosition": "-131, 0",
+                    "WidthInTiles": "1",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 4009,
+            "GlobalPosition": "-132, 0",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 4,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "-131, 0",
+                    "EndTilePosition": "-146, 0",
+                    "WidthInTiles": "1",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 4010,
+            "GlobalPosition": "-147, 0",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 4,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "-146, 0",
+                    "EndTilePosition": "-161, 0",
+                    "WidthInTiles": "1",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4011,
+            "GlobalPosition": "-162.5, 9.5",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 2,
+                    "TilesInHeight": 20,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4012,
+            "GlobalPosition": "-167.5, 0",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 4013,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4013,
+            "GlobalPosition": "-175.5, -2",
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "TilesInHeight": "5",
+                    "TilesInWidth": "8",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4014,
+            "GlobalPosition": "-175.5, -9",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 8,
+                    "TilesInHeight": 9,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "CutBottom": true
+                }
+            ]
+
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4015,
+            "GlobalPosition": "-171, -13",
+            "localRotation": 90,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Froster_tile_spike_1",
+                    "TilesInDirection": 10
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4016,
+            "GlobalPosition": "-174, 4.5",
+            "localRotation": 90,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "TilesInHeight": "5",
+                    "TilesInWidth": "8",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4017,
+            "GlobalPosition": "-173.5, 19",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 20,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4018,
+            "GlobalPosition": "-178, 4.5",
+            "localRotation": -90,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 8,
+                    "TilesInHeight": 3,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "CutBottom": true
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4019,
+            "GlobalPosition": "-177.5, 13.5",
+            "localRotation": 90,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 10,
+                    "TilesInHeight": 4,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 4016,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 4020,
+            "GlobalPosition": "-187.5, 19",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveStopOnCollisionComponent",
+                    "CollisionTagsToStart": [ "Player" ],
+                    "CollisionTagsToStop": [ "Hidden" ],
+                    "Velocity": "-300, -150",
+                    "mass": 10000,
+                    "isMovable": false,
+                    "AdjustToTileSystem": true
+                }
+            ]
+        },
+        {
+            "Tag": "Hidden",
+            "ID": 4021,
+            "GlobalPosition": "-227.5, -1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_InvisibleCollider",
+                    "WidthInTiles": 6,
+                    "heightInTiles": 1
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4022,
+            "GlobalPosition": "-225.5, -6",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "CutBottom": true
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4023,
+            "GlobalPosition": "-225.5, -11",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "CutBottom": true
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4024,
+            "GlobalPosition": "-225.5, -16",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "CutBottom": true
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4025,
+            "GlobalPosition": "-225.5, -21",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "CutBottom": true
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 4026,
+            "GlobalPosition": "-225.5, -26",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "MoveStopOnCollisionComponent",
+                    "CollisionTagsToStart": [ "Player" ],
+                    "CollisionTagsToStop": [ "Hidden" ],
+                    "Velocity": "300, -150",
+                    "mass": 10000,
+                    "isMovable": false,
+                    "AdjustToTileSystem": true
+                }
+            ]
+        },
+        {
+            "Tag": "Hidden",
+            "ID": 4027,
+            "GlobalPosition": "-185.5, -46",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_InvisibleCollider",
+                    "WidthInTiles": 6,
+                    "heightInTiles": 1
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4028,
+            "GlobalPosition": "-183.5, -51",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "CutBottom": true
+                }
+            ]
+        },
+        // repeat 3x
+        // 1 - repeat
+        {
+            "Tag": "Terrain",
+            "ID": 4029,
+            "GlobalPosition": "-173.5, -51",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "CutBottom": true
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4030,
+            "GlobalPosition": "-158.5, -51",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 4031,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4031,
+            "GlobalPosition": "-163.5, -60",
+            "localRotation": 90,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "2",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                }
+            ]
+        },
+        // 2 - repeat
+        {
+            "Tag": "Terrain",
+            "ID": 4032,
+            "GlobalPosition": "-143.5, -51",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "CutBottom": true
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4033,
+            "GlobalPosition": "-128.5, -51",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 4034,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4034,
+            "GlobalPosition": "-133.5, -42",
+            "localRotation": -90,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "2",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                }
+            ]
+        },
+        // 3 - repeat
+        {
+            "Tag": "MovableTerrain",
+            "ID": 4036,
+            "GlobalPosition": "-113.5, -51",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 4038,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                },
+                {
+                    "Type": "MoveStopOnCollisionComponent",
+                    "CollisionTagsToStart": [ "Player" ],
+                    "CollisionTagsToStop": [ "Hidden" ],
+                    "Velocity": "300, 0",
+                    "mass": 10000,
+                    "isMovable": false,
+                    "AdjustToTileSystem": true
+                }
+            ]
+        },
+        {
+            "Tag": "Hidden",
+            "ID": 4037,
+            "GlobalPosition": "-72.5, -51",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_InvisibleCollider",
+                    "WidthInTiles": 1,
+                    "heightInTiles": 1
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4038,
+            "GlobalPosition": "-119.5, -60",
+            "localRotation": 135,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "2",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                }
+            ]
+        },
+
+        {
+            "Tag": "Terrain",
+            "ID": 4039,
+            "GlobalPosition": "-65, -51",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 4,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4040,
+            "GlobalPosition": "-55, -51",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 4,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4041,
+            "GlobalPosition": "-40, -50",
+            "localRotation": 90,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "2",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                }
+            ]
+        },
+        // repeat x 4
+        {
+            "Tag": "Terrain",
+            "ID": 4042,
+            "GlobalPosition": "-40, -58",
+            "localRotation": 90,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "2",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 4041,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4043,
+            "GlobalPosition": "-40, -66",
+            "localRotation": 90,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "2",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 4042,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4044,
+            "GlobalPosition": "-40, -74",
+            "localRotation": 90,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "2",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 4043,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4045,
+            "GlobalPosition": "-40, -82",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 4,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 4044,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        //
+        {
+            "Tag": "Terrain",
+            "ID": 4046,
+            "GlobalPosition": "-50, -82",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4047,
+            "GlobalPosition": "-60, -82",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4048,
+            "GlobalPosition": "-75, -82",
+            "localRotation": 90,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "TilesInHeight": "6",
+                    "TilesInWidth": "2",
+                    "PressureTargetTags": [ "PlayerSpawned" ]
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 4048, // deactivates itself
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4049,
+            "GlobalPosition": "-83, -90",
+            "localRotation": 90,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "2",
+                    "PressureTargetTags": [ "PlayerSpawned" ],
+                    "IsMovable": true,
+                    "AngularVelocity": 1
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 4048,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4050,
+            "GlobalPosition": "-68, -90",
+            "localRotation": 90,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "2",
+                    "PressureTargetTags": [ "PlayerSpawned" ],
+                    "IsMovable": true,
+                    "AngularVelocity": -1
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 4048,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4051,
+            "GlobalPosition": "-75, -90",
+            "localRotation": 90,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "TerrainButtonBox",
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1",
+                    "TilesInHeight": "4",
+                    "TilesInWidth": "2",
+                    "PressureTargetTags": [ "PlayerSpawned" ],
+                    "IsMovable": true,
+                    "AngularVelocity": 2
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 4048,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4052,
+            "GlobalPosition": "-75, -74.5",
+            "LocalScale": "0.5, 0.5",
+            "localRotation": 90,
+            "objectComponents": [
+                {
+                    "Type": "TeleportObject",
+                    "portalLocation": "-624, -73",
+                    "portalSpriteName": "FrosterPortal"
+                },
+                {
+                    "Type": "RespawnPointReachedRecieverComponentData",
+                    "TransmitterObjectID": 4052,
+                    "TransmitterComponentType": "TeleportObject",
+                    "EventHandler": "OnPlayerTeleport"
+                }
+            ]
+        },
+
+        {
+            "Tag": "Terrain",
+            "ID": 4053,
+            "GlobalPosition": "-75, -80.5",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 4,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 4049,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4054,
+            "GlobalPosition": "-75, -79.5",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 4,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 4051,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4055,
+            "GlobalPosition": "-75, -78.5",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 4,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 4050,
+                    "TransmitterComponentType": "TerrainButtonBox",
+                    "EventHandler": "OnPressureButtonPressed"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4056,
+            "GlobalPosition": "-72.5, -77.5",
+            "localRotation": 90,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 7,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4057,
+            "GlobalPosition": "-77.5, -77.5",
+            "localRotation": -90,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 7,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 4058,
+            "GlobalPosition": "-75, -73.5",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Froster_tile_corner1",
+                    "SideTileName": "Froster_tile_side1",
+                    "MiddleTileName": "Froster_tile_middle1"
+                }
+            ]
+        },
+
+
+        {
+            "Tag": "Terrain",
+            "ID": -11111,
+            "objectComponents": [
+                {
+                    "Type": "EnemySpawner",
+                    "EnemyTypes": [
+                        //"Enemy_AntiVerse_ShaPt",
+                        //"Enemy_AntiVerse_ShaPt",
+                        //"Enemy_AntiVerse_ShaPt",
+                        //"Enemy_AntiVerse_ShaPt"
+                    ],
+                    "EnemySpawnPositions": [
+                        //"230, -21",
+                        //"250, -21",
+                        //"270, -21",
+                        //"290, -21"
+                    ]
+                }
+            ]
+        }
+    ]
+}

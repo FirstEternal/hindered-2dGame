@@ -1,0 +1,785 @@
+{
+    "gameObjects": [
+        {
+            "Tag": "Terrain",
+            "ID": 6700,
+            "GlobalPosition": "0, 0",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 8,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6701,
+            "GlobalPosition": "0, -6",
+            "localRotation": 90,
+            "LocalScale": "1, 1",
+            "objectComponents": [
+                {
+                    "Type": "TeleportObject",
+                    "portalLocation": "300, -3",
+                    "portalSpriteName": "GrassPortal"
+                }
+            ]
+        },
+
+        // boss terrain start
+        {
+            "Tag": "Terrain",
+            "ID": 6706,
+            "GlobalPosition": "248, -14",
+            "localRotation": 90,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Grasser_tile_spike_1",
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1",
+                    "TilesInDirection": 15,
+                    "TilesInHeight": 3,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6707,
+            "GlobalPosition": "273, 0",
+            "localRotation": -90,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Grasser_tile_spike_1",
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1",
+                    "TilesInDirection": 30,
+                    "TilesInHeight": 2,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0
+                },
+                {
+                    "Type": "RecieverDelayed",
+                    "DelayInSeconds": 1,
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 1000005,
+                    "TransmitterComponentType": "BossEnemy",
+                    "EventHandler": "OnSpecialMove"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6708,
+            "GlobalPosition": "278, -29",
+            "localRotation": 90,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Grasser_tile_spike_1",
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1",
+                    "TilesInDirection": 30,
+                    "TilesInHeight": 2,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0
+                },
+                {
+                    "Type": "RecieverDelayed",
+                    "DelayInSeconds": 1,
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 1000005,
+                    "TransmitterComponentType": "BossEnemy",
+                    "EventHandler": "OnSpecialMove"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6709,
+            "GlobalPosition": "250, 0",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 2,
+                    "TilesInHeight": 8,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6710,
+            "GlobalPosition": "252.5, 1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 3,
+                    "TilesInHeight": 7,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6711,
+            "GlobalPosition": "255, -1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 2,
+                    "TilesInHeight": 6,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "255, -9",
+                    "EndTilePosition": "255, 1",
+                    "WidthInTiles": "2",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6712,
+            "GlobalPosition": "257.5, 1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 3,
+                    "TilesInHeight": 9,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6713,
+            "GlobalPosition": "260, 1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 2,
+                    "TilesInHeight": 6,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6714,
+            "GlobalPosition": "262, -1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 2,
+                    "TilesInHeight": 8,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "262, -11",
+                    "EndTilePosition": "262, 3",
+                    "WidthInTiles": "2",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "100"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6715,
+            "GlobalPosition": "264.5, 2",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 3,
+                    "TilesInHeight": 7,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6716,
+            "GlobalPosition": "267, -2",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 2,
+                    "TilesInHeight": 5,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6717,
+            "GlobalPosition": "270, 1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 4,
+                    "TilesInHeight": 8,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+
+        {
+            "Tag": "Terrain",
+            "ID": 6718,
+            "GlobalPosition": "280, 0",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 2,
+                    "TilesInHeight": 8,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6719,
+            "GlobalPosition": "282.5, 1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 3,
+                    "TilesInHeight": 7,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6720,
+            "GlobalPosition": "285, -1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 2,
+                    "TilesInHeight": 6,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6721,
+            "GlobalPosition": "287.5, 1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 3,
+                    "TilesInHeight": 9,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "287.5, -12",
+                    "EndTilePosition": "287.5, 2",
+                    "WidthInTiles": "2",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "300"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6722,
+            "GlobalPosition": "291, -2",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 4,
+                    "TilesInHeight": 10,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6723,
+            "GlobalPosition": "294.5, -1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 3,
+                    "TilesInHeight": 8,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6724,
+            "GlobalPosition": "297, -1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 2,
+                    "TilesInHeight": 6,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6725,
+            "GlobalPosition": "300, 1.5",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 4,
+                    "TilesInHeight": 9,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6726,
+            "GlobalPosition": "303, -1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 2,
+                    "TilesInHeight": 6,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6727,
+            "GlobalPosition": "305.5, -1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 3,
+                    "TilesInHeight": 8,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6728,
+            "GlobalPosition": "309, -2",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 4,
+                    "TilesInHeight": 10,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6729,
+            "GlobalPosition": "312.5, 1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 3,
+                    "TilesInHeight": 9,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "312.5, -12",
+                    "EndTilePosition": "312.5, 2",
+                    "WidthInTiles": "2",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "300"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6730,
+            "GlobalPosition": "315, -1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 2,
+                    "TilesInHeight": 6,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6731,
+            "GlobalPosition": "317.5, 1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 3,
+                    "TilesInHeight": 7,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6732,
+            "GlobalPosition": "320, 0",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 2,
+                    "TilesInHeight": 8,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6733,
+            "GlobalPosition": "330, 1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 4,
+                    "TilesInHeight": 8,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6734,
+            "GlobalPosition": "333, -2",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 2,
+                    "TilesInHeight": 5,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6735,
+            "GlobalPosition": "335.5, 2",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 3,
+                    "TilesInHeight": 7,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6736,
+            "GlobalPosition": "338, -1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 2,
+                    "TilesInHeight": 8,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "338, -11",
+                    "EndTilePosition": "338, 3",
+                    "WidthInTiles": "2",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "100"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6737,
+            "GlobalPosition": "340, 1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 2,
+                    "TilesInHeight": 6,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6738,
+            "GlobalPosition": "342.5, 1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 3,
+                    "TilesInHeight": 9,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 6739,
+            "GlobalPosition": "345, -1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 2,
+                    "TilesInHeight": 6,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                },
+                {
+                    "Type": "MoveOnCollisionPlatformComponent",
+                    "StartTilePosition": "345, -9",
+                    "EndTilePosition": "345, 1",
+                    "WidthInTiles": "2",
+                    "HeightInTiles": "1",
+                    "MovementSpeed": "200"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6740,
+            "GlobalPosition": "347.5, 1",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 3,
+                    "TilesInHeight": 7,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6741,
+            "GlobalPosition": "350, 0",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 2,
+                    "TilesInHeight": 8,
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1"
+                }
+            ]
+        },
+
+        {
+            "Tag": "Terrain",
+            "ID": 6742,
+            "GlobalPosition": "322, 0",
+            "localRotation": -90,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Grasser_tile_spike_1",
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1",
+                    "TilesInDirection": 30,
+                    "TilesInHeight": 2,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0
+                },
+                {
+                    "Type": "RecieverDelayed",
+                    "DelayInSeconds": 1,
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 1000005,
+                    "TransmitterComponentType": "BossEnemy",
+                    "EventHandler": "OnSpecialMove"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6743,
+            "GlobalPosition": "327, -29",
+            "localRotation": 90,
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Grasser_tile_spike_1",
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1",
+                    "TilesInDirection": 30,
+                    "TilesInHeight": 2,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0
+                },
+                {
+                    "Type": "RecieverDelayed",
+                    "DelayInSeconds": 1,
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 1000005,
+                    "TransmitterComponentType": "BossEnemy",
+                    "EventHandler": "OnSpecialMove"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6744,
+            "GlobalPosition": "352, 0",
+            "localRotation": -90,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Grasser_tile_spike_1",
+                    "CornerTileName": "Grasser_tile_corner1",
+                    "SideTileName": "Grasser_tile_side1",
+                    "MiddleTileName": "Grasser_tile_middle1",
+                    "TilesInDirection": 15,
+                    "TilesInHeight": 3,
+                    "TilesBeforeSkip": 0,
+                    "SkipTillNext": 0
+                }
+            ]
+        },
+
+        {
+            "Tag": "Terrain",
+            "ID": 6746,
+            "isActive": false,
+            "GlobalPosition": "275.5, -14.5",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_FadeOut",
+                    "HeightInTiles": 30,
+                    "WidthInTiles": 6
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "MakeActive",
+                    "TransmitterObjectID": 1000005,
+                    "TransmitterComponentType": "BossEnemy",
+                    "EventHandler": "OnSpecialMove"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 6747,
+            "GlobalPosition": "324.5, -14.5",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_FadeOut",
+                    "HeightInTiles": 30,
+                    "WidthInTiles": 6
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "MakeActive",
+                    "TransmitterObjectID": 1000005,
+                    "TransmitterComponentType": "BossEnemy",
+                    "EventHandler": "OnSpecialMove"
+                }
+            ]
+        },
+
+        {
+            "Tag": "Terrain",
+            "ID": -11111,
+            "objectComponents": [
+                {
+                    "Type": "EnemySpawner",
+                    "BossEnemyTypes": [ "BossEnemy_DragonicGrasser" ],
+                    "BossEnemySpawnPositions": [ "300, -33.125" ],
+                    "BossEnemyArrivalPositions": [ "300, -23.125" ],
+                    "InitiateFightGameObjectIDs": [ 6701 ]
+                }
+            ]
+        }
+    ]
+}

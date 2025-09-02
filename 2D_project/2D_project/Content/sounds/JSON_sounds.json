@@ -1,0 +1,61 @@
+[
+    // ALL OF THE SOUNDS ARE TEMPORARY
+    // category -> sound effects
+    {
+        "IsSoundEffect": true,
+        "Name": "SFX_ON_HOVER_ENTER",
+        "FileName": "001_Hover_01"
+    },
+    {
+        "IsSoundEffect": true,
+        "Name": "SFX_ON_CLICK",
+        "FileName": "013_Confirm_03"
+    },
+    {
+        "IsSoundEffect": true,
+        "Name": "jump",
+        "FileName": "30_Jump_03"
+    },
+    // category -> boss level music sound
+    {
+        "IsSoundEffect": false,
+        "Name": "Burner",
+        "FileName": "Pixel 4"
+    },
+    {
+        "IsSoundEffect": false,
+        "Name": "Drowner",
+        "FileName": "Pixel 4"
+    },
+    {
+        "IsSoundEffect": false,
+        "Name": "Boulderer",
+        "FileName": "Pixel 4"
+    },
+    {
+        "IsSoundEffect": false,
+        "Name": "Froster",
+        "FileName": "Pixel 4"
+    },
+    {
+        "IsSoundEffect": false,
+        "Name": "Grasser",
+        "FileName": "Pixel 4"
+    },
+    {
+        "IsSoundEffect": false,
+        "Name": "Shader",
+        "FileName": "Pixel 4"
+    },
+    {
+        "IsSoundEffect": false,
+        "Name": "Thunderer",
+        "FileName": "Pixel 4"
+    },
+    // random
+    {
+        "IsSoundEffect": true,
+        "Name": "power_up",
+        "FileName": "power_up"
+    }
+]

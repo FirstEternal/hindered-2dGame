@@ -1,0 +1,90 @@
+{
+    "gameObjects": [
+        {
+            "Tag": "Terrain",
+            "ID": 2001,
+            "GlobalPosition": "0, 0",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "TilesInWidth": 8,
+                    "TilesInHeight": 1,
+                    "CornerTileName": "Antimatter_tile_corner1",
+                    "SideTileName": "Antimatter_tile_side1",
+                    "MiddleTileName": "Antimatter_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 2776,
+            "GlobalPosition": "-6, -3",
+            "LocalScale": "0.5, 0.5",
+            "objectComponents": [
+                {
+                    "Type": "TeleportObject",
+                    "portalLocation": "1810, -8.5",
+                    "portalSpriteName": "FrosterPortal"
+                }, /*
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "StartLevelPart",
+                    "TransmitterObjectID": 2776,
+                    "TransmitterComponentType": "TeleportObject",
+                    "EventHandler": "OnPlayerTeleport"
+                },*/
+                {
+                    "Type": "GoToLevelPartComponent",
+                    "LevelPartIndex": "4"
+                },
+                {
+                    "Type": "RespawnPointIndexData",
+                    "Index": 4
+                },
+                {
+                    "Type": "RespawnPointReachedRecieverComponentData",
+                    "TransmitterObjectID": 2776,
+                    "TransmitterComponentType": "TeleportObject",
+                    "EventHandler": "OnPlayerTeleport"
+                }
+            ]
+        },
+        
+        {
+            "Tag": "Terrain",
+            "ID": 2778,
+            "GlobalPosition": "6, -3",
+            "LocalScale": "0.5, 0.5",
+            "objectComponents": [
+                /*
+                {
+                    "Type": "TeleportObject",
+                    "portalLocation": "1875, -2.25",
+                    "portalSpriteName": "BouldererPortal"
+                },*/
+                /*
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "StartLevelPart",
+                    "TransmitterObjectID": 2778,
+                    "TransmitterComponentType": "TeleportObject",
+                    "EventHandler": "OnPlayerTeleport"
+                },*/
+                {
+                    "Type": "GoToLevelPartComponent",
+                    "LevelPartIndex": "1"
+                },
+                {
+                    "Type": "RespawnPointIndexData",
+                    "Index": 1
+                },
+                {
+                    "Type": "RespawnPointReachedRecieverComponentData",
+                    "TransmitterObjectID": 2778,
+                    "TransmitterComponentType": "TeleportObject",
+                    "EventHandler": "OnPlayerTeleport"
+                }
+            ]
+        }
+    ]
+}

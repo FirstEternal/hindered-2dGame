@@ -1,0 +1,286 @@
+{
+    "RULES": "",
+    "RULE1": "TODO",
+
+    "gameObjects": [
+        {
+            "Tag": "Terrain",
+            "ID": 1002,
+            "GlobalPosition": "-15.5, 5",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Burner_tile_corner1",
+                    "SideTileName": "Burner_tile_side1",
+                    "MiddleTileName": "Burner_tile_middle1",
+                    "TilesInWidth": 21,
+                    "TilesInHeight": 40,
+                    "CutBottom": true
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 10020,
+            "GlobalPosition": "-15.5, 45",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Antimatter_tile_corner1",
+                    "SideTileName": "Antimatter_tile_side1",
+                    "MiddleTileName": "Antimatter_tile_middle1",
+                    "TilesInWidth": 21,
+                    "TilesInHeight": 40,
+                    "CutBottom": true
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 1003,
+            "GlobalPosition": "0, 52",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Burner_tile_corner1",
+                    "SideTileName": "Burner_tile_side1",
+                    "MiddleTileName": "Burner_tile_middle1",
+                    "TilesInWidth": 8,
+                    "TilesInHeight": 1
+                },
+                {
+                    "Type": "MoveStopOnCollisionComponent",
+                    "CollisionTagsToStart": [ "Player" ],
+                    "CollisionTagsToStop": [ "Hidden" ],
+                    "Velocity": "0, -400",
+                    "mass": 10000,
+                    "isMovable": false,
+                    "AdjustToTileSystem": true
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 1004,
+            "GlobalPosition": "15.5, 5",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Burner_tile_corner1",
+                    "SideTileName": "Burner_tile_side1",
+                    "MiddleTileName": "Burner_tile_middle1",
+                    "TilesInWidth": 21,
+                    "TilesInHeight": 40,
+                    "CutBottom": true
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 10040,
+            "GlobalPosition": "15.5, 45",
+            "localRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Antimatter_tile_corner1",
+                    "SideTileName": "Antimatter_tile_side1",
+                    "MiddleTileName": "Antimatter_tile_middle1",
+                    "TilesInWidth": 21,
+                    "TilesInHeight": 40,
+                    "CutBottom": true
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 1005,
+            "GlobalPosition": "-13, -20",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Burner_tile_corner1",
+                    "SideTileName": "Burner_tile_side1",
+                    "MiddleTileName": "Burner_tile_middle1",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 1009,
+            "GlobalPosition": "13, -20",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Burner_tile_corner1",
+                    "SideTileName": "Burner_tile_side1",
+                    "MiddleTileName": "Burner_tile_middle1",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 1010,
+            "GlobalPosition": "-23.5, -24",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Burner_tile_corner1",
+                    "SideTileName": "Burner_tile_side1",
+                    "MiddleTileName": "Burner_tile_middle1",
+                    "TilesInWidth": 5,
+                    "TilesInHeight": 18,
+                    "CutBottom": true
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 1011,
+            "GlobalPosition": "23.5, -24",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Burner_tile_corner1",
+                    "SideTileName": "Burner_tile_side1",
+                    "MiddleTileName": "Burner_tile_middle1",
+                    "TilesInWidth": 5,
+                    "TilesInHeight": 18,
+                    "CutBottom": true
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 1012,
+            "GlobalPosition": "-20.5, -15.35",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Burner_tile_spike_1",
+                    "TilesInDirection": 42,
+                    "TilesBeforeSkip": 16,
+                    "SkipTillNext": 10
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 1013,
+            "GlobalPosition": "-4.5, -15.35",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Burner_tile_spike_1",
+                    "TilesInDirection": 10
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 1003,
+                    "TransmitterComponentType": "MovePlayerWithPlatformLogic",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "Hidden",
+            "ID": 1014,
+            "GlobalPosition": "0, -21",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_InvisibleCollider",
+                    "WidthInTiles": 6,
+                    "heightInTiles": 1
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 1015,
+            "GlobalPosition": "20.5, -32.65",
+            "LocalRotation": 180,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Burner_tile_spike_1",
+                    "TilesInDirection": 42,
+                    "TilesBeforeSkip": 6,
+                    "SkipTillNext": 30
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 1016,
+            "GlobalPosition": "-20.5, -35",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Burner_tile_corner1",
+                    "SideTileName": "Burner_tile_side1",
+                    "MiddleTileName": "Burner_tile_middle1",
+                    "TilesInWidth": 11,
+                    "TilesInHeight": 4
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 1017,
+            "GlobalPosition": "20.5, -35",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Burner_tile_corner1",
+                    "SideTileName": "Burner_tile_side1",
+                    "MiddleTileName": "Burner_tile_middle1",
+                    "TilesInWidth": 11,
+                    "TilesInHeight": 4
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 1018,
+            "GlobalPosition": "0, -5",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Burner_tile_corner1",
+                    "SideTileName": "Burner_tile_side1",
+                    "MiddleTileName": "Burner_tile_middle1",
+                    "TilesInWidth": 10,
+                    "TilesInHeight": 20
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 1003,
+                    "TransmitterComponentType": "MovePlayerWithPlatformLogic",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": -11111,
+            "objectComponents": [
+                {
+                    "Type": "EnemySpawner",
+                    "BossEnemyTypes": [ "BossEnemy_DragonicBurner" ],
+                    "BossEnemySpawnPositions": [ "6.25, -53.125" ],
+                    "BossEnemyArrivalPositions": [ "0, -28.125" ],
+                    "InitiateFightGameObjectIDs": [ 1003 ]
+                }
+            ]
+        }
+    ]
+}

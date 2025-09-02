@@ -1,0 +1,297 @@
+{
+    "RULES": "",
+    "RULE1": "TODO",
+
+    "gameObjects": [
+        {
+            "Tag": "Terrain",
+            "ID": 2000,
+            "GlobalPosition": "-18, -18",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Stairs",
+                    "TilesInDirection": 6,
+                    "CornerTileName": "Drowner_tile_corner1",
+                    "SideTileName": "Drowner_tile_side1",
+                    "MiddleTileName": "Drowner_tile_middle1"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 2001,
+            "GlobalPosition": "18, -18",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Stairs",
+                    "TilesInDirection": 6,
+                    "CornerTileName": "Drowner_tile_corner1",
+                    "SideTileName": "Drowner_tile_side1",
+                    "MiddleTileName": "Drowner_tile_middle1",
+                    "IsHorizontallyFlipped": true
+                }
+            ]
+        },
+
+        {
+            "Tag": "Terrain",
+            "ID": 2002,
+            "GlobalPosition": "-15.5, 25",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Drowner_tile_corner1",
+                    "SideTileName": "Drowner_tile_side1",
+                    "MiddleTileName": "Drowner_tile_middle1",
+                    "TilesInWidth": 21,
+                    "TilesInHeight": 80
+                }
+            ]
+        },
+        {
+            "Tag": "MovableTerrain",
+            "ID": 2003,
+            "GlobalPosition": "0, 34",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Drowner_tile_corner1",
+                    "SideTileName": "Drowner_tile_side1",
+                    "MiddleTileName": "Drowner_tile_middle1",
+                    "TilesInWidth": 7,
+                    "TilesInHeight": 1
+                },
+                {
+                    "Type": "MoveStopOnCollisionComponent",
+                    "CollisionTagsToStart": [ "Player" ],
+                    "CollisionTagsToStop": [ "Hidden" ],
+                    "Velocity": "0, -400",
+                    "mass": 10000,
+                    "isMovable": false,
+                    "AdjustToTileSystem": true
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 2004,
+            "GlobalPosition": "15.5, 25",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Drowner_tile_corner1",
+                    "SideTileName": "Drowner_tile_side1",
+                    "MiddleTileName": "Drowner_tile_middle1",
+                    "TilesInWidth": 21,
+                    "TilesInHeight": 80
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 2005,
+            "GlobalPosition": "-9.5, -17",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Drowner_tile_corner1",
+                    "SideTileName": "Drowner_tile_side1",
+                    "MiddleTileName": "Drowner_tile_middle1",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 2009,
+            "GlobalPosition": "9.5, -17",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Drowner_tile_corner1",
+                    "SideTileName": "Drowner_tile_side1",
+                    "MiddleTileName": "Drowner_tile_middle1",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 2010,
+            "GlobalPosition": "-23.5, -24",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Drowner_tile_corner1",
+                    "SideTileName": "Drowner_tile_side1",
+                    "MiddleTileName": "Drowner_tile_middle1",
+                    "TilesInWidth": 5,
+                    "TilesInHeight": 18,
+                    "CutBottom": true
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 2011,
+            "GlobalPosition": "23.5, -24",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Drowner_tile_corner1",
+                    "SideTileName": "Drowner_tile_side1",
+                    "MiddleTileName": "Drowner_tile_middle1",
+                    "TilesInWidth": 5,
+                    "TilesInHeight": 18,
+                    "CutBottom": true
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 2012,
+            "GlobalPosition": "9.5, -23",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Drowner_tile_corner1",
+                    "SideTileName": "Drowner_tile_side1",
+                    "MiddleTileName": "Drowner_tile_middle1",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CutBottom": true
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 2013,
+            "GlobalPosition": "-9.5, -23",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Drowner_tile_corner1",
+                    "SideTileName": "Drowner_tile_side1",
+                    "MiddleTileName": "Drowner_tile_middle1",
+                    "TilesInWidth": 6,
+                    "TilesInHeight": 1,
+                    "CutBottom": true
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 2016,
+            "GlobalPosition": "-14.5, -15.35",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Drowner_tile_spike_1",
+                    "TilesInDirection": 30,
+                    "TilesBeforeSkip": 10,
+                    "SkipTillNext": 10
+                }
+            ]
+        },
+        {
+            "Tag": "Hidden",
+            "ID": 2017,
+            "GlobalPosition": "0, -18",
+            "objectComponents": [
+                {
+                    "Type": "Terrain_InvisibleCollider",
+                    "WidthInTiles": 6,
+                    "heightInTiles": 1
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 2018,
+            "GlobalPosition": "-20.63, -32.5",
+            "localRotation": 90,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Drowner_tile_spike_1",
+                    "TilesInDirection": 12,
+                    "TilesBeforeSkip": 12,
+                    "SkipTillNext": 0
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 2019,
+            "GlobalPosition": "20.63, -21.5",
+            "localRotation": -90,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Drowner_tile_spike_1",
+                    "TilesInDirection": 12,
+                    "TilesBeforeSkip": 12,
+                    "SkipTillNext": 0
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 2020,
+            "GlobalPosition": "-4.5, -15.35",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_SpikeLane",
+                    "SpikeTileName": "Drowner_tile_spike_1",
+                    "TilesInDirection": 10
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 2003,
+                    "TransmitterComponentType": "MovePlayerWithPlatformLogic",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": 2021,
+            "GlobalPosition": "0, -5",
+            "isActive": false,
+            "objectComponents": [
+                {
+                    "Type": "Terrain_Rectangle",
+                    "CornerTileName": "Drowner_tile_corner1",
+                    "SideTileName": "Drowner_tile_side1",
+                    "MiddleTileName": "Drowner_tile_middle1",
+                    "TilesInWidth": 10,
+                    "TilesInHeight": 20
+                },
+                {
+                    "Type": "Reciever",
+                    "PerformActionName": "Flicker",
+                    "TransmitterObjectID": 2003,
+                    "TransmitterComponentType": "MovePlayerWithPlatformLogic",
+                    "EventHandler": "OnStop"
+                }
+            ]
+        },
+        {
+            "Tag": "Terrain",
+            "ID": -11111,
+            "objectComponents": [
+                {
+                    "Type": "EnemySpawner",
+                    "BossEnemyTypes": [ "BossEnemy_DragonicDrowner" ],
+                    "BossEnemySpawnPositions": [ "6.25, -37,55" ],
+                    "BossEnemyArrivalPositions": [ "0, -28.125" ],
+                    "InitiateFightGameObjectIDs": [ 2003 ]
+                }
+            ]
+        }
+    ]
+}
